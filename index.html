@@ -6,6 +6,23 @@
         <link rel="stylesheet" href="https://use.typekit.net/xkx1ezv.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script language="JavaScript">
+            $(function() {
+                $('button').bind('click',function(event){
+                    var $anchor = $(this);
+                    /*
+                    if you want to use one of the easing effects:
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1500,'easeInOutExpo');
+                    */
+                    $('html, filmSection').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);
+                    event.preventDefault();
+                });
+            });
+        </script>
 
     </head>
     <body>
@@ -17,14 +34,36 @@
             </video>
         </header>
         <script>  $("#navBarContainer" ).load( "navBar.html" ); </script>
-
-        <div id="work">
-            <h1>work</h1>
-
-        </div>
         <div id="about">
             <h1> about</h1>
         </div>
+
+
+        
+        <div id="work">
+           
+
+            <div class="filmSection">
+
+                <div class="filmCover section" id="section1">
+                    <img src="trust.png"/>
+                    <div class="filmDescription">
+                        <h1>I Taught Him That</h1> 
+                        <h3> <i>Description of this that and the other</i></h3>
+                        <a class="button" href="#section2"> Button </a>
+                    </div>
+                </div>
+
+                <div class="filmView section"  id="section2">
+                    <a class="button" href="#section1"> Button </a>
+
+                </div>
+            
+            </div>
+            
+
+        </div>
+        
       
         
 
