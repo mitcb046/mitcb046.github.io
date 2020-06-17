@@ -11,7 +11,6 @@
     </head>
     <body>
         <div>
-            
             <div id="navBarContainer">  </div>
             <script>  $("#navBarContainer" ).load( "navBar.html" ); </script>
 
@@ -24,11 +23,7 @@
                 <video autoplay muted loop id="showreel">
                     <source src="Media/showreel.mp4" type="video/mp4">
                 </video>
-            <a href="#about" class="downArrow"></a>
             </div>
-
-        
-
         
             <div id="about">
                 <div><h1> I'm a freelance filmmaker based in London, UK. I specialise in 
@@ -39,7 +34,6 @@
                 </div>
                 
             </div>
-        
 
             <div id="work">
                 <div class="filmSection">
@@ -52,52 +46,41 @@
                                 <a class="button" href="#section2"> play full video </a>
                             </div>
                         </div>
-                        <a href="#trustSection1" class="downArrow"></a>
 
-                    </div>
+                        <div class="filmView section"  id="section2">
+                            <iframe class="player" src="https://player.vimeo.com/video/371079592" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            
+                            <div><a class="backButton" href="#section1"> </a></div>
+                            
 
-                    <div class="filmView section"  id="section2">
-                        <iframe class="player" src="https://player.vimeo.com/video/371079592" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        
-                        <div><a class="backButton" href="#section1"> </a></div>
-                        
-
-                    </div>
-                </div>
-            
-            </div>
-        
-        
-
-            <div class="filmSection">
-                <div class="slides">
-                    <div class="filmCover section" id="trustSection1">
-                        <img src="Media/trust.jpg"/>
-                        <div class="filmDescription">
-                            <h1>Trust Your Senses</h1> 
-                            <h3> <i>Description of this that and the other</i></h3>
-                            <a class="button" href="#trustSection2"> play full video </a>
                         </div>
                     </div>
-
-                    <div class="filmView section"  id="trustSection2">
-                        <iframe class="player" src="https://player.vimeo.com/video/371087584" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        
-                        <div><a class="backButton" href="#trustSection1"> </a></div>
-                        
-
-                    </div>
+                
                 </div>
-            
-            </div>
-           
 
-        </div>
-        <div class="holster">
-            <div class="yScrollContainer">
-                <div class="y">1</div>
-                <div class="y">2</div>
-                <div class="y">3</div>
+                <div class="filmSection">
+                    <div class="slides">
+                        <div class="filmCover section" id="trustSection1">
+                            <img src="Media/trust.jpg"/>
+                            <div class="filmDescription">
+                                <h1>Trust Your Senses</h1> 
+                                <h3> <i>Description of this that and the other</i></h3>
+                                <a class="button" href="#trustSection2"> play full video </a>
+                            </div>
+                        </div>
+
+                        <div class="filmView section"  id="trustSection2">
+                            <iframe class="player" src="https://player.vimeo.com/video/371087584" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            
+                            <div><a class="backButton" href="#trustSection1"> </a></div>
+                            
+
+                        </div>
+                    </div>
+                
+                </div>
+                
+
             </div>
         </div>
         
