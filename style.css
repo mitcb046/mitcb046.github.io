@@ -8,6 +8,33 @@ body {
     margin: 0;
 }
 
+.holster{
+    position: relative;
+    
+}
+
+.yScrollContainer{
+    display: flex;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    /* flex: none; */
+    flex-flow: column;
+    
+    scroll-behavior: smooth;
+    
+}
+.yScrollContainer>div{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    /* transition: transform 0.5s; */
+    position: relative;
+    
+    outline: 1px dashed lightgray;
+    height: 50vh;
+    text-align: center;
+    
+    
+}
 #navBarContainer{
     position: fixed;
     width: 100vw;
@@ -86,6 +113,19 @@ div.sticky {
     /* padding-bottom: 50vh; */ 
     
 }
+
+
+.downArrow{
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: 0px;
+    bottom: 30px;
+    -webkit-transform: rotate(45deg);
+}
 #about {
     position: relative;
     height: 100vh;
@@ -123,7 +163,7 @@ div.sticky {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
 }
 .slides > div {
     scroll-snap-align: start;
@@ -181,6 +221,8 @@ div.sticky {
 
 }
 
+
+
 .filmView {
     position: relative;
     width: 100vw;
@@ -199,6 +241,6 @@ div.sticky {
 @media screen and ( max-width: 800px ) {
     #navBarSmall { display:flex; }
     #navBarLarge { display:none; }
-    div.sticky { z-index: 99;
+    div.sticky { z-index: 99; }
 
     }
