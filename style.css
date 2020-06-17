@@ -12,6 +12,8 @@ body {
     position: fixed;
     width: 100vw;
     z-index: 100;
+    /* background-color: tomato; */
+    /* background-image: linear-gradient(to bottom, rgba(230, 218, 218, 0.308) ,rgba(255,0,0,0)); */
 }
 #navBar{
     
@@ -25,29 +27,71 @@ body {
 #navBar a {
     text-decoration: none;
     font-size: 25px;
-    line-height: 130px;
+    line-height: 100px;
     padding-right: 10px;
     color:white;
 }
 
+#name{
+    width: 25vw;
+    /* padding: 10px 0 0 0; */
+    padding-top: calc(20px);
+}
+#name img{
+    width: 100%;
+}
+
+
 
 #showreel{
     z-index: -1;
+    position: absolute;
+    top: 0;
     object-fit: cover;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
+div.spacer{
+    height:calc(50vh - 50px);
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding-left: calc(50vw - 50px);
+    /* z-index: 100; */
+    /* margin-top: calc(50vh - 50px); */
+   
+    /* padding-bottom: 50vh; */ 
+    
+}
 #about {
     height: 100vh;
     margin-left: 5%;
     margin-right: 5%;
+    padding: 10vh 0 10vh 0;   
 }
+
+.workTwoColumn {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 10vw;
+}
+    .workTwoColumn img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .workTwoColumn div {
+        width: 100%;
+    }
 
 .filmSection{
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    /* position: absolute; */
     overflow: hidden;
 
 }
@@ -76,7 +120,7 @@ body {
 }
 .filmCover img {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     
 }
@@ -90,6 +134,31 @@ body {
     
 }
 
+.button {
+    width: auto;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: x-small;
+    font-style: italic;
+    padding: 2px 0 2px 0;
+}
+.backButton{
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 0 2px 2px;
+    position: absolute;
+    left: 30px;
+    margin-bottom: -10px;
+    bottom: 50%;
+    -webkit-transform: rotate(45deg);
+
+}
+
 .filmView {
     position: relative;
     width: 100vw;
@@ -99,3 +168,17 @@ body {
     position: absolute;
 }
 
+.player {
+    width: 100vw; 
+    height: 100%;
+}
+
+
+@media (max-width: 500px) {
+    .workTwoColumn {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+}
