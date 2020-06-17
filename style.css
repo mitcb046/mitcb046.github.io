@@ -15,7 +15,7 @@ body {
     /* background-color: tomato; */
     background-image: linear-gradient(to bottom, rgba(27, 26, 26, 0.699) ,rgba(255,0,0,0));
 }
-#navBar{
+#navBarLarge{
     
     display: flex;
     justify-content: space-between;
@@ -24,13 +24,31 @@ body {
     margin-right: 5%;
 }
 
-#navBar a {
+#navBarLarge a {
     text-decoration: none;
     font-size: 25px;
     line-height: 100px;
     padding-right: 10px;
     color:white;
 }
+#navBarSmall{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display:none;
+}
+
+#navBarSmall a {
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 100px;
+    padding-right: 10px;
+    color:white;
+}
+
 
 #name{
     width: 25vw;
@@ -178,9 +196,9 @@ div.sticky {
 }
 
 
-@media (max-width: 1000px) {
-    
+@media screen and ( max-width: 800px ) {
+    #navBarSmall { display:flex; }
+    #navBarLarge { display:none; }
+    div.sticky { z-index: 99;
 
-   
-
-}
+    }
