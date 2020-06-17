@@ -13,7 +13,7 @@ body {
     width: 100vw;
     z-index: 100;
     /* background-color: tomato; */
-    /* background-image: linear-gradient(to bottom, rgba(230, 218, 218, 0.308) ,rgba(255,0,0,0)); */
+    background-image: linear-gradient(to bottom, rgba(27, 26, 26, 0.699) ,rgba(255,0,0,0));
 }
 #navBar{
     
@@ -69,13 +69,14 @@ div.sticky {
     
 }
 #about {
+    position: relative;
     height: 100vh;
     margin-left: 5%;
     margin-right: 5%;
     padding: 10vh 0 10vh 0;   
 }
 
-.workTwoColumn {
+/* .workTwoColumn {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -88,7 +89,7 @@ div.sticky {
     }
     .workTwoColumn div {
         width: 100%;
-    }
+    } */
 
 .filmSection{
     height: 100vh;
@@ -177,11 +178,9 @@ div.sticky {
 }
 
 
-/* @media (max-width: 500px) {
-    .workTwoColumn {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
+@media (max-width: 1000px) {
+    
 
-} */
+   
+
+}
