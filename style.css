@@ -5,6 +5,7 @@ body {
     background-color: black; 
     color: white;
     font-family: quicksand;
+    font-weight: lighter;
     margin: 0;
 }
 
@@ -254,6 +255,6 @@ div.sticky {
 
 @media ( max-width: 500px ) {
     #circusCoverImage{
-        object-position: -20vw 0;
+        object-position: -30vw 0;
     }
 }
