@@ -250,3 +250,10 @@ div.sticky {
      }
 
 }
+
+
+@media ( max-width: 500px ) {
+    #circusCoverImage{
+        object-position: -20vw 0;
+    }
+}
