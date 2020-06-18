@@ -102,11 +102,17 @@ div.sticky {
     height: 100%;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 10vh 0 10vh 0;   
+    padding: 15vh 0 15vh 0;   
+    text-align: center;
+    line-height: 30px;
 }
 
 #about h1{
-    font-family: Quicksand Light;
+    font-weight: bold;
+}
+
+#about h2{
+    font-weight: lighter;
 }
 
 /* .workTwoColumn {
