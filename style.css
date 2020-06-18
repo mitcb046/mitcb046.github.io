@@ -221,6 +221,17 @@ div.sticky {
 @media screen and ( max-width: 800px ) {
     #navBarSmall { display:flex; }
     #navBarLarge { display:none; }
-    div.sticky { z-index: 99;
-
+    div.sticky { z-index: 99;}
+    .award {
+        
+        width: 25vw;
+        height: 25vw;
+        object-fit: contain;
+        top: 50%;
+        left: 12%;
+        margin-top: -12vw;
+        /* bottom: 30px; */
+        
     }
+
+}
