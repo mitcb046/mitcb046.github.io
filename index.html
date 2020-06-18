@@ -13,6 +13,24 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function () {
+                $('.filmCarousel').slick({
+                    centerMode: true,
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: true,
+                    prevArrow: '<button class="prev-arrow"></button>',
+                    nextArrow: '<button class="next-arrow"></button>',
+                    adaptiveHeight: true,
+                    variableHeight: true, 
+                    // variableWidth: true
+                });
+            });
+        </script>
        
 
     </head>
@@ -65,7 +83,7 @@
                     </div>
                 
                 </div>
-
+                
                 <div class="filmSection">
                     <div class="slides">
                         <div class="filmCover section" id="trustSection1">
