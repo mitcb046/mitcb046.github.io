@@ -5,31 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.typekit.net/xkx1ezv.css">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
         <link rel="manifest" href="/site.webmanifest">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        
         <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
         <script type="text/javascript" src="js/slick/slick.min.js"></script>
-        <script language="JavaScript">
-            $(document).ready(function () {
+        <!-- <script type="text/javascript" src="js/slick-1.8.1/slick/slick.js"></script> -->
+        
+        <script>
+            $(document).ready(function(){
                 $('.filmCarousel').slick({
-                    centerMode: true,
-                    slidesToShow: 1,
-                    dots: true,
-                    arrows: true,
-                    prevArrow: '<button class="prev-arrow"></button>',
-                    nextArrow: '<button class="next-arrow"></button>',
-                    adaptiveHeight: true,
-                    variableHeight: true, 
-                    // variableWidth: true
-                });
+                centerMode: true,
+                slidesToShow: 2,
+                dots: true,
+                arrows: true,
+                prevArrow: '<button class="prev-arrow"></button>',
+                nextArrow: '<button class="next-arrow"></button>',
+                adaptiveHeight: true,
+                variableHeight: true, 
+                // variableWidth: true
             });
+            });
+           
+        </script>
+         <script language="JavaScript">
+            $(document).ready(function(){
+                $("#playButton1").click(function () {
+                    var video = '<div><iframe class= "popUpFilm" src="'+ $('#sliceCoverImage1').attr('data-video') +'"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
+                    $('#cover1').hide();
+                    $('#tube1').html(video);
+                    
+    
+    
+                });
+                
+            });
+    
         </script>
        
 
@@ -107,10 +127,46 @@
                     </div>
                 
                 </div>
+                <div id="additionalWork">
+                    <h1>additional work</h1>
+                    <div class="filmCarousel">
+
+                        <div class="filmSlice"> 
+                            <div class="cover" id="cover1">
+                                <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/General Images/benji.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
+                                <img id="playButton1" class="playButton" src="Media/General Images/play.png"/>
+                            </div>
+                            <div id="tube1"> </div> 
+                        </div>
+
+                        <div class="filmSlice"> 
+                            <div class="cover">
+                                <img class="sliceCoverImage" src="Media/General Images/benji.jpg"/> 
+                                <img class="playButton" src="Media/General Images/play.png"/>
+                            </div>
+                            <div id="tube"> </div> 
+                        </div>
+                        <div class="filmSlice"> 
+                            <div class="cover">
+                                <img class="sliceCoverImage" src="Media/General Images/benji.jpg"/> 
+                                <img class="playButton" src="Media/General Images/play.png"/>
+                            </div>
+                            <div id="tube"> </div> 
+                        </div>
+                           
+                    </div>
+                
+                 </div>
+                
                 
 
             </div>
+
+
         </div>
+
+        
+        
         
       
         
