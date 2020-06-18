@@ -170,10 +170,10 @@ div.sticky {
 }
 .award{
     position: absolute;
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
     object-fit: contain;
-    top: 30%;
+    top: 20%;
     left: 10%;
     /* margin-top: -10px; */
     /* bottom: 30px; */
@@ -184,7 +184,7 @@ div.sticky {
     position: absolute;
     right: 0px;
     top: 0px;
-    padding: 40vh 10vw 0 0 ;
+    padding: 20vh 10vw 0 0 ;
     
 }
 
@@ -240,5 +240,13 @@ div.sticky {
         margin-top: -12vw;
         /* bottom: 30px; */
     }
+    #circusCoverImage{
+        object-position: -50vw 0;
+    }
+    .filmDescription {
+        margin-right: 5vw;
+        width: 40vw;
+        
+     }
 
 }
