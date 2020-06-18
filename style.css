@@ -105,6 +105,10 @@ div.sticky {
     padding: 10vh 0 10vh 0;   
 }
 
+#about h1{
+    font-family: Quicksand Light;
+}
+
 /* .workTwoColumn {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -223,15 +227,12 @@ div.sticky {
     #navBarLarge { display:none; }
     div.sticky { z-index: 99;}
     .award {
-        
         width: 25vw;
         height: 25vw;
-        object-fit: contain;
         top: 50%;
         left: 12%;
         margin-top: -12vw;
         /* bottom: 30px; */
-        
     }
 
 }
