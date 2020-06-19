@@ -241,7 +241,7 @@ div.sticky {
 }
 
 .filmSlideSmall{
-    width:25vw;
+    width:33vw;
     position: relative;
 }
 .filmSlideSmall>div{
@@ -281,14 +281,14 @@ div.sticky {
 } */
 .sliceCoverImage{
     height: 80vh;
-    width:25vw;
+    width:100%;
     object-fit: cover;
     
 }
 
 .popUpFilmContainer{
     height: 100%;
-    width: 50vw;
+    width: 66vw;
     /* position: absolute; */
     
 }

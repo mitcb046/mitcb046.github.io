@@ -48,15 +48,27 @@
             });
         </script> -->
         
-         <script language="JavaScript">
+         <script language="JavaScript"> 
+         // Code for loading the films for the additional work section
             $(document).ready(function(){
                 $(".button").click(function () {
-                    var video = '<div class= "popUpFilmContainer"><iframe class= "player" src="'+ $('#sliceCoverImage1').attr('data-video') +'"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div> <div class="backButton" id="backButton1"> </div>';
+                    // select data from HTML
+                    var link = $(this).parent().parent().find("img").attr('data-video');
+                    var player = $(this).parent().parent().next(".tube");
+                   
+                    //test:
+                    // console.log(link);
+                    // console.log(player);
+                    
+                    
+                    var video = '<div class= "popUpFilmContainer"><iframe class= "player" src="'+ link +'"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div> <div class="backButton" id="backButton1"> </div>';
                     // $('#cover1').hide();
-                    $('#tube1').html(video);
-                    $('#tube1').show();
+                    $(player).html(video);
+                    
+                    $(player).show();
                     $("#backButton1").click(function () {
-                            $('#tube1').hide();
+                            // $( this ).closest(player).slideUp();
+                            $(player).hide();
                             
                         });
                 });
@@ -65,11 +77,6 @@
     
         </script>
 
-          <!-- <script language="JavaScript">
-                        $("#backButton1").click(function () {
-                            $('#tube1').hide();
-                        });
-                    </script> -->
         
        
 
@@ -154,34 +161,34 @@
                     
 
                     <div class="slides">
-                        <div class="filmSlideSmall">
+                        <div class="filmSlideSmall" id="slide1">
                             <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Nat1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
                             <div>
                                 <h1> Title</h1>
                                 <h2> Description</h2>
-                                <a class="button" id="artButton" > play full video </a>
+                                <a class="button" id="artButton" href="#slide1"> play full video </a>
                             </div>
                         </div>
-                        <div id="tube1"> </div>
+                        <div class="tube" id="tube1"> </div>
 
-                        <div class="filmSlideSmall">
+                        <div class="filmSlideSmall" id="slide2">
                             <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/3dprint1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
                             <div>
                                 <h1> Title</h1>
                                 <h2> Description</h2>
-                                <a class="button" id="artButton" > play full video </a>
+                                <a class="button" id="artButton" href="#slide2"> play full video </a>
                             </div>
                         </div>
-                        <div id="tube1"> </div>
-                        <div class="filmSlideSmall">
-                            <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Protest1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
+                        <div class="tube" id="tube2"> </div>
+                        <div class="filmSlideSmall" id="slide3">
+                            <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Protest1.jpg" data-video="https://player.vimeo.com/video/430365342" /> 
                             <div>
                                 <h1> Title</h1>
                                 <h2> Description</h2>
-                                <a class="button" id="artButton" > play full video </a>
+                                <a class="button" id="artButton" href="#tube3" > play full video </a>
                             </div>
                         </div>
-                        <div id="tube1"> </div>
+                        <div class="tube" id="tube3"> </div>
                       
                     </div>
 
