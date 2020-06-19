@@ -381,4 +381,13 @@ div.sticky {
     #circusCoverImage{
         object-position: -30vw 0;
     }
+    .filmSlideSmall{
+        width: 50vw;
+    }
+    .popUpFilmContainer{
+        height: 100%;
+        width: 100vw;
+        /* position: absolute; */
+        
+    }
 }
