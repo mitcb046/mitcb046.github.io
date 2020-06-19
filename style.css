@@ -193,8 +193,10 @@ div.sticky {
     right: 0px;
     top: 0px;
     padding: 20vh 10vw 0 0 ;
+    text-align: center;
     
 }
+
 
 .button {
     width: auto;
@@ -283,6 +285,8 @@ div.sticky {
 
 .filmSliceContents{
     visibility: hidden;
+    text-align: center;
+    font-weight: lighter;
 }
 /* .filmSlideSmall:hover .filmSlideSmall {
     transform: scale(1.5);
@@ -373,6 +377,7 @@ div.sticky {
         width: 40vw;
 
      }
+     
 
 }
 
