@@ -66,6 +66,7 @@ body h1,h2{
 }
 
 .downArrow {
+    z-index: 100;
     width: 20px;
     height: 20px;
     border: solid white;
@@ -223,7 +224,8 @@ div.sticky {
 }
 
 #backButton1{
-    bottom:0;
+    /* bottom:0; */
+    z-index: 100;
 }
 
 .filmView {
@@ -243,9 +245,11 @@ div.sticky {
 .filmSlideSmall{
     width:33vw;
     position: relative;
+    background-color: black;
+    transition: transform .2s;
 }
 .filmSlideSmall>div{
-    color:black;
+    /* color:black; */
     position: absolute;
     width: 50%; 
     top: 50%;
@@ -254,35 +258,16 @@ div.sticky {
 }
 
 
-
-
-/* .filmCarousel {
-    
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
-    height:100vh;
-    padding: 10vh 10vw 10vh 10vw;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    
-}
-  
-.filmSlice{
-    height: 80vh;
-    width:25vw;
-    
-
-   
-    position: relative;
-    
+/* #additionalWork{
+    padding-top:100px;
 } */
+
+
 .sliceCoverImage{
     height: 80vh;
     width:100%;
     object-fit: cover;
+    transition: transform .2s;
     
 }
 
@@ -295,7 +280,26 @@ div.sticky {
 .popUpFilm{
     width:100%;
 }
-#playTest{
+
+.filmSliceContents{
+    visibility: hidden;
+}
+/* .filmSlideSmall:hover .filmSlideSmall {
+    transform: scale(1.5);
+} */
+.filmSlideSmall:hover .filmSliceContents {
+    visibility: visible;
+}
+
+.filmSlideSmall:hover .sliceCoverImage {
+    
+    opacity: 0.5;
+    filter: saturate(80%);
+    filter: blur(1px);
+    /* transform: scale(1.1); */
+}
+
+/* #playTest{
     width:100%;
 }
 #playTestContainer{
@@ -303,8 +307,10 @@ div.sticky {
     width: 50vw;
     margin-top: 10vh;
     /* position: absolute; */
-    overflow: hidden;
-}
+    /* overflow: hidden;
+} */ 
+
+
 .prev-arrow {
     width: 20px;
     height: 20px;
