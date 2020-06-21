@@ -202,6 +202,7 @@ div.sticky {
     width: auto;
     display: block;
     text-align: center;
+    /* background-color: white; */
     border: 1px solid white;
     border-radius: 2px;
     text-decoration: none;
@@ -210,7 +211,23 @@ div.sticky {
     font-style: italic;
     padding: 2px 0 2px 0;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+/* .button:hover {
+    background-color: rgb(212, 209, 209);
+    color:black;
+    text-shadow: 0px 0px 2px black;
+    border: 1px solid  rgb(212, 209, 209);
+} */
+
+.button:hover {
+    background-color:rgb(34, 33, 33);
+    opacity: 0.6;
+    /* text-shadow: 0px 0px 2px white; */
+    border: 1px solid  white;
+}
+
 .backButton{
     width: 20px;
     height: 20px;
