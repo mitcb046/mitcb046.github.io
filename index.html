@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
         <script type="text/javascript" src="js/slick/slick.min.js"></script>
+      
 <!-- 
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		
@@ -77,6 +78,23 @@
                 
             });
     
+        </script>
+
+        <script type=text/javascript> // custom script for hover function 
+         $(document).ready(function(){
+            var x = window.matchMedia("(max-width: 500px)");
+            console.log(x);
+            if (x.matches) {
+                $('.filmSlideSmall').hover(function(){
+                    $(this).css( "width", "66.6vw" );
+                    $(this).siblings('.filmSlideSmall').css( "width", "16.5vw" );
+
+                }, function(){
+                    $(this).siblings('.filmSlideSmall').css( "width", "33.3vw" );
+                });
+            };
+        });
+        
         </script>
 
         
