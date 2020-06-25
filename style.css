@@ -77,6 +77,14 @@ body h1,h2{
     bottom: 30px;
     -webkit-transform: rotate(45deg);
 }
+
+/* .parent{ 
+    scroll-snap-type: y proximity;
+}
+.child{
+    scroll-snap-align: start;
+    
+} */
 .showreelContainer{
     width: 100vw;
 }
@@ -211,7 +219,7 @@ div.sticky {
     font-style: italic;
     padding: 2px 0 2px 0;
     cursor: pointer;
-    transition: 0.3s;
+    
 }
 
 /* .button:hover {
@@ -222,6 +230,7 @@ div.sticky {
 } */
 
 .button:hover {
+    transition: 0.3s;
     background-color:rgb(34, 33, 33);
     opacity: 0.6;
     /* text-shadow: 0px 0px 2px white; */
@@ -262,7 +271,7 @@ div.sticky {
 }
 
 .filmSlideSmall{
-    width:33vw;
+    width:32.9vw;
     position: relative;
     background-color: black;
     transition: transform .2s;
