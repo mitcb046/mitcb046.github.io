@@ -5,13 +5,14 @@ body {
     background-color: black; 
     color: white;
     font-family: quicksand;
-    font-weight: lighter;
+    font-weight: 100;
     margin: 0;
     
 }
 
-body h1,h2{
+body h1,h2,h3{
     text-align: center;
+    font-weight: 100;
 }
 
 #navBarContainer{
@@ -22,12 +23,12 @@ body h1,h2{
     background-image: linear-gradient(to bottom, rgba(27, 26, 26, 0.699) ,rgba(0, 0, 0, 0));
 }
 #navBarLarge{
-    
     display: flex;
     justify-content: space-between;
     height: 100px;
     margin-left: 5%;
     margin-right: 5%;
+    z-index: 100;
 }
 
 #navBarLarge a {
@@ -66,7 +67,7 @@ body h1,h2{
 }
 
 .downArrow {
-    z-index: 100;
+    z-index: -5;
     width: 20px;
     height: 20px;
     border: solid white;
@@ -90,7 +91,7 @@ body h1,h2{
 }
 
 #showreel{
-    z-index: -1;
+    z-index: -10;
     position: absolute;
     top: 0;
     width: 100%;
@@ -106,28 +107,36 @@ div.sticky {
     position: sticky;
     top: 0px;
     padding-left: calc(50vw - 50px);
-    /* z-index: 100; */
+    z-index: -1;
+    
     /* margin-top: calc(50vh - 50px); */
    
     /* padding-bottom: 50vh; */ 
     
 }
 #about {
+    z-index: 10;
     position: relative;
     height: 100vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 15vh 0 15vh 0;   
+    padding-left: 5%;
+    padding-right: 5%;
+    /* padding: 15vh 0 15vh 0;    */
     text-align: center;
     line-height: 30px;
+    background-color: black;
 }
 
-#about h1{
+/* #about h1{
     font-weight: bold;
-}
+} */
 
 #about h2{
     font-weight: lighter;
+}
+
+#work{
+    background-color: black;
+    z-index: 10;
 }
 
 /* .workTwoColumn {
@@ -206,19 +215,24 @@ div.sticky {
 }
 
 
+
+
 .button {
-    width: auto;
-    display: block;
+    width: fit-content;
+    /* display: block; */
+    position: relative;
     text-align: center;
     /* background-color: white; */
     border: 1px solid white;
     border-radius: 2px;
     text-decoration: none;
     color: white;
-    font-size: x-small;
+    font-size: small;
     font-style: italic;
-    padding: 2px 0 2px 0;
+    padding: 5px 5px 5px 5px;
     cursor: pointer;
+    /* left:50%; */
+    /* transform: translate(-50%,-50%); */
     
 }
 
@@ -269,7 +283,11 @@ div.sticky {
     width: 100%; 
     height: 100%;
 }
-
+#additionalWork {
+    background-color: none;
+    z-index: -10;
+    
+}
 .filmSlideSmall{
     width:32.9vw;
     position: relative;
@@ -286,9 +304,12 @@ div.sticky {
 }
 
 
-/* #additionalWork{
-    padding-top:100px;
-} */
+.textSection > h1{
+    padding: 20vh 0 20vh 0;
+    margin: 0 0 0 0;
+    background-color: none ;
+}
+
 
 
 .sliceCoverImage{
@@ -384,9 +405,15 @@ div.sticky {
 
 
 @media ( max-width: 800px ) {
-    #navBarSmall { display:flex; }
+    #navBarSmall { 
+        display:flex;
+        z-index: 99; }
     #navBarLarge { display:none; }
     div.sticky { z-index: 99;}
+    #about{z-index: 0;}
+    .downArrow{
+        z-index: 90;
+    }
     .award {
         width: 25vw;
         height: 25vw;

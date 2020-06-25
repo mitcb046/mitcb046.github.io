@@ -106,14 +106,14 @@
     </head>
     <body>
         
-            <div>
-                <div id="navBarContainer">  </div>
-                <script>  $("#navBarContainer" ).load( "navBar.html" ); </script>
+            
+            <div id="navBarContainer">  </div>
+            <script>  $("#navBarContainer" ).load( "navBar.html" ); </script>
 
-                <div class="spacer"></div>
-                <div class="sticky"> <img src="Media/General Images/logo.png"> </div>
-                <div class="spacer"></div>
-            </div>
+            <div class="spacer"></div>
+            <div class="sticky"> <img src="Media/General Images/logo.png"> </div>
+            <div class="spacer"></div>
+            
         
             <div class="showreelContainer child">
                 <video autoplay muted loop playsinline id="showreel">
@@ -122,17 +122,20 @@
                 <a href="#about" class="downArrow"></a>
             </div>
         
-            <div class ="child" id="about">
+            <div class ="textSection" id="about">
+                <h1>about </h1> 
                 <div>
-                    <h1>about </h1> 
+                    
                     <h2>I'm a self-shooting filmmaker based in London, UK. I specialise in research film projects and short documentary films, exploring human experience and connecting viewers to powerful stories. I provide professional story-driven content production, videography and editing services. 
                     </h2>
 
                 </div>
+                <a href="#work" class="downArrow"></a>
                 
             </div>
 
-            <div id="work">
+            <div class="textSection" id="work">
+                <h1>featured work</h1>
                 <div class="filmSection child">
                     <div class="slides">
                         <div class="filmCover section" id="section1">
@@ -179,51 +182,53 @@
                 
                 </div>
 
-
-                <div id="additionalWork ">
-                    <h1>additional work</h1>
-                    
-
-                    <div class="slides">
-                        <div class="filmSlideSmall" id="slide1">
-                            <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Nat1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
-                            <div class="filmSliceContents">
-                                <h1> Title</h1>
-                                <h2> Description</h2>
-                                <a class="button" id="artButton" href="#slide1"> play full video </a>
-                            </div>
-                        </div>
-                        <div class="tube" id="tube1"> </div>
-
-                        <div class="filmSlideSmall" id="slide2">
-                            <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/3dprint1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
-                            <div class="filmSliceContents">
-                                <h1> Title</h1>
-                                <h2> Description</h2>
-                                <a class="button" id="artButton" href="#tube2"> play full video </a>
-                            </div>
-                        </div>
-                        <div class="tube" id="tube2"> </div>
-                        <div class="filmSlideSmall" id="slide3">
-                            <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Protest1.jpg" data-video="https://player.vimeo.com/video/430365342" /> 
-                            <div class="filmSliceContents">
-                                <h1> Title</h1>
-                                <h2> Description</h2>
-                                <a class="button" id="artButton" href="#tube3" > play full video </a>
-                            </div>
-                        </div>
-                        <div class="tube" id="tube3"> </div>
-                        
-                    </div>
-
-                    
-
-
-
-                    
                 
-                    </div>
+               
             </div>
+
+            <div class ="textSection" id="additionalWork">
+                <h1>additional work</h1>
+                
+
+                <div class="slides">
+                    <div class="filmSlideSmall" id="slide1">
+                        <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Nat1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
+                        <div class="filmSliceContents">
+                            <h1> Title</h1>
+                            <h2> Description</h2>
+                            <a class="button" id="artButton" href="#slide1"> play full video </a>
+                        </div>
+                    </div>
+                    <div class="tube" id="tube1"> </div>
+
+                    <div class="filmSlideSmall" id="slide2">
+                        <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/3dprint1.jpg" data-video="https://player.vimeo.com/video/430388407" /> 
+                        <div class="filmSliceContents">
+                            <h1> Title</h1>
+                            <h2> Description</h2>
+                            <a class="button" id="artButton" href="#tube2"> play full video </a>
+                        </div>
+                    </div>
+                    <div class="tube" id="tube2"> </div>
+                    <div class="filmSlideSmall" id="slide3">
+                        <img id ="sliceCoverImage1" class="sliceCoverImage" src="Media/Protest1.jpg" data-video="https://player.vimeo.com/video/430365342" /> 
+                        <div class="filmSliceContents">
+                            <h1> Title</h1>
+                            <h2> Description</h2>
+                            <a class="button" id="artButton" href="#tube3" > play full video </a>
+                        </div>
+                    </div>
+                    <div class="tube" id="tube3"> </div>
+                    
+                </div>
+
+                
+
+
+
+                
+            
+                </div>
        
 
        
