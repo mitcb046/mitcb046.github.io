@@ -67,7 +67,7 @@ body h1,h2,h3{
 }
 
 .downArrow {
-    z-index: -5;
+    z-index: 1;
     width: 20px;
     height: 20px;
     border: solid white;
@@ -107,7 +107,7 @@ div.sticky {
     position: sticky;
     top: 0px;
     padding-left: calc(50vw - 50px);
-    z-index: -1;
+    z-index: 100;
     
     /* margin-top: calc(50vh - 50px); */
    
@@ -404,9 +404,21 @@ div.sticky {
 }
 
 #footerContainer{
-    padding: 5vh 5vw 5vh 5vw;
-    
+    padding: 10vh 5vw 10vh 5vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
 
+#socialMediaContainer{
+    display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+#socialMediaContainer img{
+    width: 50px;
+    padding-left: 10px;
 }
 
 
