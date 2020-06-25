@@ -55,7 +55,9 @@ body h1,h2,h3{
     padding-right: 10px;
     color:white;
 }
-
+#navBarContainer a:hover {
+    text-shadow: 0 0 2px white ;
+}
 
 #name{
     width: 25vw;
