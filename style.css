@@ -230,7 +230,7 @@ div.sticky {
     text-decoration: none;
     color: white;
     font-size: small;
-    font-style: italic;
+    font-style: normal;
     padding: 5px 5px 5px 5px;
     cursor: pointer;
     /* left:50%; */
