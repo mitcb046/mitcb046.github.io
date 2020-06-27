@@ -4,9 +4,10 @@
 body {
     background-color: black; 
     color: white;
-    font-family: quicksand;
+    font-family: Priori Sans OT Light;
     font-weight: 100;
     margin: 0;
+    font-size: larger;
     
 }
 
@@ -229,7 +230,7 @@ div.sticky {
     border-radius: 2px;
     text-decoration: none;
     color: white;
-    font-size: small;
+    font-size: medium;
     font-style: normal;
     padding: 5px 5px 5px 5px;
     cursor: pointer;
