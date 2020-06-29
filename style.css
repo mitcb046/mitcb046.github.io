@@ -188,6 +188,7 @@ div.sticky {
 
 .filmCover {
     width:100vw;
+    height:100%;
     position: relative;
 }
 .filmCoverImage{
@@ -294,9 +295,11 @@ div.sticky {
 }
 .filmSlideSmall{
     width:32.9vw;
+    height:100%;
     position: relative;
     background-color: black;
     transition: transform .2s;
+    overflow: hidden;
 }
 .filmSlideSmall>div{
     /* color:black; */
@@ -335,6 +338,8 @@ div.sticky {
 }
 
 .filmSliceContents{
+    
+    
     visibility: hidden;
     text-align: center;
     font-weight: lighter;
