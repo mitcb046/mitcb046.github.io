@@ -4,7 +4,7 @@
 body {
     background-color: black; 
     color: white;
-    font-family: Priori Sans OT Light;
+    font-family: "Priori Sans OT Light", Quicksand;
     font-weight: 100;
     margin: 0;
     font-size: larger;
@@ -461,9 +461,17 @@ justify-content: space-evenly;
         object-position: -50vw 0;
     }
     .filmDescription {
+        
         /* margin-right: 0vw; */
+        /* right: 0px; */
+        /* top: 25%; */
+        /* bottom: 0px; */
+        /* padding: 0 10vw 10vw 0; */
         width: 40vw;
 
+     }
+     .filmDescription h3 {
+         font-size: small;
      }
      
 
