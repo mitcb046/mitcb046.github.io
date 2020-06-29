@@ -9,6 +9,7 @@ body {
     margin: 0;
     font-size: larger;
     
+    
 }
 
 body h1,h2,h3{
@@ -440,6 +441,10 @@ justify-content: space-evenly;
 
 
 @media ( max-width: 800px ) {
+    .filmDescription > h1, .filmDescription > h3, .button {
+        font-style: normal;
+        font-weight: 500;
+    }
     #navBarSmall { 
         display:flex;
         z-index: 99; }
