@@ -446,6 +446,9 @@ justify-content: space-evenly;
 
 
 @media ( max-width: 800px ) {
+    .textSection > h1{
+        padding: 5vh 0 5vh 0;
+    }
     .filmDescription > h1, .filmDescription > h3, .button {
         font-style: normal;
         font-weight: 500;
